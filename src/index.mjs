@@ -1,4 +1,3 @@
-
 import 'colors'
 import inquirer from 'inquirer'
 import compress from './compress.mjs'
@@ -24,10 +23,10 @@ export const homeStage = async () => {
       message: getString('home'),
       type: 'list',
       choices:
-    [
-      { name: getString('home_compress'), value: true },
-      { name: getString('home_exit'), value: false }
-    ]
+        [
+          { name: getString('home_compress'), value: true },
+          { name: getString('home_exit'), value: false }
+        ]
     })
 
   if (input === true) await selectionStage()
@@ -65,7 +64,7 @@ const manualStage = async () => {
         message: getString('select_title'),
         type: 'checkbox',
         choices:
-              [...files.map(fileName => { return { name: fileName, value: fileName } })]
+          [...files.map(fileName => { return { name: fileName, value: fileName } })]
       })
 
     if (input.length === 0) {

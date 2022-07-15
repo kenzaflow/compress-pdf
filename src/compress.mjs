@@ -6,7 +6,7 @@ import { resolve } from 'path'
  * @param {string[]} files
  * @param {string} quality
  */
-export default function compress (files, quality) {
+export default function compress(files, quality) {
   // 'default' | 'screen' | 'ebook' | 'prepress' | 'printer'
 
   files.forEach(file => {
