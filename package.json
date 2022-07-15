@@ -1,0 +1,29 @@
+{
+  "name": "compress-pdf-gs",
+  "version": "0.0.1",
+  "author": {
+    "name": "Kevin Zaracho",
+    "email": "kevin.isap99@gmail.com",
+    "url": "https://www.kenza.ar"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "nodemon index.mjs"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^2.0.18"
+  },
+  "nodemonConfig": {
+    "ext": "js,mjs",
+    "restartable": false
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^9.0.0"
+  }
+}
